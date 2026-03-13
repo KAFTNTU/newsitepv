@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+<meta name="google-site-verification" content="vYdsoBVZtFHqTr8YoBmb2F4dpPM8nrC9oNJsFOFE9rU" />
+  <link rel="canonical" href="https://kaftntu.github.io/kaf-pv-tntu/">
+    <meta charset="UTF-8">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/kaf-pv-tntu/favicon.png">
+<link rel="apple-touch-icon" href="/kaf-pv-tntu/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедра Приладів і Контрольно-Вимірювальних Систем | ТНТУ</title>
+    <meta name="description" content="Кафедра приладів і контрольно-вимірювальних систем (ПВКС) Тернопільського національного технічного університету. Інформація для студентів, абітурієнтів та викладачів.">
+    <meta property="og:title" content="Кафедра Приладів і Контрольно-Вимірювальних Систем | ТНТУ">
+<meta property="og:description" content="Офіційний сайт кафедри приладів і контрольно-вимірювальних систем ТНТУ">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaftntu.github.io/kaf-pv-tntu/">
+<meta property="og:site_name" content="Кафедра ПВ ТНТУ">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Кафедра Приладів і Контрольно-Вимірювальних Систем ТНТУ",
+  "url": "https://kaftntu.github.io/kaf-pv-tntu/"
+}
+</script>
+
+  
+</head>
+<body class="antialiased bg-slate-900 text-slate-300 flex flex-col min-h-screen">
+
+<!-- === HEADER (Десктоп) === -->
+<header id="header" class="frosted-glass fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            
+            <!-- Logo -->
+            <div class="flex-shrink-0 cursor-pointer" onclick="switchTab('home')">
+                <div class="flex items-center space-x-3">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg text-white leading-tight">Кафедра ПВ</span>
+                        <span class="text-[10px] text-slate-400 leading-tight">ТНТУ ім. Івана Пулюя</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 text-sm">
+                <button onclick="switchTab('home')" class="nav-btn active" data-tab="home">Головна</button>
+                <button onclick="switchTab('news')" class="nav-btn" data-tab="news">Новини</button>
+                
+                <div class="dropdown-container relative group">
+                    <button class="nav-btn flex items-center gap-1" onclick="switchTab('kafedra')" data-tab="kafedra">
+                        Кафедра
+                    </button>
+                    <div class="dropdown-menu">
+                        <button onclick="switchTab('kafedra', null, 'tab-history')" class="dropdown-item">Історія кафедри</button>
+                        <button onclick="switchTab('kafedra', null, 'tab-staff')" class="dropdown-item">Персонал</button>
+                        <button onclick="switchTab('kafedra', null, 'tab-programs')" class="dropdown-item">Освітні програми</button>
+                        <button onclick="switchTab('kafedra', null, 'tab-plan')" class="dropdown-item">Навчальний план</button>
+                        <button onclick="switchTab('kafedra', null, 'tab-graduates')" class="dropdown-item">Випускники</button>
+                    </div>
+                </div>
+
+                <div class="dropdown-container relative group">
+                    <button class="nav-btn flex items-center gap-1" data-tab="specialties">
+                        Спеціальності
+                    </button>
+                    <div class="dropdown-menu w-80">
+                        <button onclick="switchTab('spec2')" class="dropdown-item py-3 leading-tight">G5 "Електроніка, електронні комунікації, приладобудування та радіотехніка"</button>
+                         <button onclick="switchTab('spec1')" class="dropdown-item py-3 leading-tight">G6 "Інформаційно-вимірювальні технології"</button>
+                    </div>
+                </div>
+
+                <button onclick="switchTab('labs')" class="nav-btn" data-tab="labs">Лабораторії</button>
+                <button onclick="switchTab('science')" class="nav-btn" data-tab="science">Наука</button>
+                <button onclick="switchTab('international')" class="nav-btn" data-tab="international">Міжнародні</button>
+                
+                <div class="dropdown-container relative group">
+                <button class="nav-btn flex items-center gap-1">
+                        Студенту
+                    </button>
+                    <div class="dropdown-menu">
+                        <button onclick="switchTab('student')" class="dropdown-item">Бланки</button>
+                        <button onclick="switchTab('disciplines')" class="dropdown-item">Навчальні дисципліни</button>
+                        <a href="https://tntu.edu.ua/?p=uk/schedule/" target="_blank" class="dropdown-item">Розклад</a>
+                        <a href="https://dl.tntu.edu.ua/login.php" target="_blank" class="dropdown-item">Електронне навчання</a>
+                        <a href="https://nv.tntu.edu.ua/files/graph_den.pdf" target="_blank" class="dropdown-item">Графік навчального процесу</a>
+                    </div>
+                </div>
+
+                <button onclick="switchTab('entrant')" class="nav-btn" data-tab="entrant">Абітурієнту</button>
+                <button onclick="switchTab('home', 'contacts')" class="nav-btn">Контакти</button>
+            </nav>
+
+            <!-- Mobile Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="p-2 text-slate-400 hover:text-white" onclick="openMobileMenu()">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- === MOBILE MENU  === -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-slate-900/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden flex flex-col overflow-y-auto">
+    
+    <!-- Шапка меню (Лого + Кнопка закриття) -->
+    <div class="flex justify-between items-center p-6 border-b border-slate-700/50">
+        <div class="flex items-center space-x-3">
+            <div class="flex flex-col">
+                <span class="font-bold text-lg text-white leading-tight">Кафедра ПВ</span>
+                <span class="text-[10px] text-slate-400 leading-tight">ТНТУ ім. Івана Пулюя</span>
+            </div>
+        </div>
+        <!-- Кнопка закриття -->
+        <button id="close-mobile-menu" class="text-white p-2 border-2 border-sky-500 rounded-md hover:bg-sky-500/20 transition" onclick="closeMobileMenu()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+    </div>
+
+    <div class="p-6 space-y-4">
+        
+        <button onclick="switchTab('home')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Головна</button>
+        <button onclick="switchTab('news')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Новини</button>
+
+        <!-- Кафедра -->
+        <div class="mobile-menu-group border-b border-slate-700/50">
+            <button class="mobile-link w-full flex justify-between items-center text-left text-white text-lg font-medium py-2" onclick="toggleMobileSubmenu('mob-kafedra')">
+                Кафедра <svg class="w-5 h-5 transition-transform" id="icon-mob-kafedra" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="mob-kafedra" class="hidden flex-col pl-4 pt-2 space-y-3 pb-2">
+                <button onclick="switchTab('kafedra', null, 'tab-history')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Історія</button>
+                <button onclick="switchTab('kafedra', null, 'tab-staff')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Персонал</button>
+                <button onclick="switchTab('kafedra', null, 'tab-programs')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Освітні програми</button>
+                <button onclick="switchTab('kafedra', null, 'tab-plan')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Навчальний план</button>
+                <button onclick="switchTab('kafedra', null, 'tab-graduates')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Випускники</button>
+            </div>
+        </div>
+
+        <!-- Спеціальності -->
+        <div class="mobile-menu-group border-b border-slate-700/50">
+            <button class="mobile-link w-full flex justify-between items-center text-left text-white text-lg font-medium py-2" onclick="toggleMobileSubmenu('mob-specialties')">
+                Спеціальності <svg class="w-5 h-5 transition-transform" id="icon-mob-specialties" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="mob-specialties" class="hidden flex-col pl-4 pt-2 space-y-3 pb-2">
+                  <button onclick="switchTab('spec1')" class="mobile-sub-link text-slate-300 hover:text-white block text-base leading-tight py-1">G6 "Інформаційно-вимірювальні технології"</button>
+                <button onclick="switchTab('spec2')" class="mobile-sub-link text-slate-300 hover:text-white block text-base leading-tight py-1">G5 "Електроніка, електронні комунікації..."</button>
+              
+            </div>
+        </div>
+
+        <button onclick="switchTab('labs')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Навчальні лабораторії</button>
+        <button onclick="switchTab('science')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Наука</button>
+        <button onclick="switchTab('international')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Міжнародні зв'язки</button>
+        
+        <!-- Студенту -->
+        <div class="mobile-menu-group border-b border-slate-700/50">
+            <button class="mobile-link w-full flex justify-between items-center text-left text-white text-lg font-medium py-2" onclick="toggleMobileSubmenu('mob-student')">
+                Студенту <svg class="w-5 h-5 transition-transform" id="icon-mob-student" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div id="mob-student" class="hidden flex-col pl-4 pt-2 space-y-3 pb-2">
+                <button onclick="switchTab('student')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Бланки</button>
+                <button onclick="switchTab('disciplines')" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Навчальні дисципліни</button>
+                <a href="https://tntu.edu.ua/?p=uk/schedule/" target="_blank" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Розклад</a>
+                <a href="https://dl.tntu.edu.ua/login.php" target="_blank" class="mobile-sub-link text-slate-300 hover:text-white block text-base">Електронне навчання</a>
+            </div>
+        </div>
+
+        <button onclick="switchTab('entrant')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full border-b border-slate-700/50">Абітурієнту</button>
+        <button onclick="switchTab('home', 'contacts')" class="mobile-link text-left text-white text-lg font-medium py-2 block w-full">Контакти</button>
+    </div>
+</div>
+
+<!-- === ОСНОВНИЙ КОНТЕНТ === -->
+<main class="pt-16 min-h-screen relative">
+    
+    <div id="tab-home" class="tab-content" data-src="sections/home.html"></div>
+    <div id="tab-news" class="tab-content hidden" data-src="sections/news.html"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div id="tab-kafedra" class="tab-content hidden" data-src="sections/kafedra.html"></div>
+        <div id="tab-spec1" class="tab-content hidden" data-src="sections/spec1.html"></div>
+        <div id="tab-spec2" class="tab-content hidden" data-src="sections/spec2.html"></div>
+        <div id="tab-labs" class="tab-content hidden" data-src="sections/labs.html"></div>
+        <div id="tab-science" class="tab-content hidden" data-src="sections/science.html"></div>
+        <div id="tab-international" class="tab-content hidden" data-src="sections/international.html"></div>
+        <div id="tab-student" class="tab-content hidden" data-src="sections/student.html"></div>
+        <div id="tab-disciplines" class="tab-content hidden" data-src="sections/disciplines.html"></div>
+        <div id="tab-entrant" class="tab-content hidden" data-src="sections/entrant.html"></div>
+    </div>
+
+</main>
+
+<!-- === POPUPS (Staff Detail) === -->
+<div id="modal-overlay" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0" onclick="closeAllModals()"></div>
+<div id="staff-detail-modal" class="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[60] w-full max-w-3xl p-4 hidden transition-all duration-300 scale-95 opacity-0">
+    <div class="bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden max-h-[80vh] flex flex-col neon-border-box">
+        <div class="p-6 border-b border-slate-700 flex justify-between items-center">
+            <h3 id="staff-detail-name" class="text-2xl font-bold text-white">Ім'я</h3>
+            <button onclick="closeAllModals()" class="text-slate-400 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="p-6 overflow-y-auto">
+            <div class="flex flex-col md:flex-row gap-6">
+                <img id="staff-detail-img" src="" class="w-32 h-32 rounded-lg object-cover" alt="Staff">
+                <div>
+                     <p id="staff-detail-title" class="text-sky-400 font-semibold mb-4 text-lg">Посада</p>
+                     <div id="staff-detail-details" class="text-slate-300 text-sm space-y-4"></div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-700">
+                <h4 class="font-bold text-white mb-2">Дисципліни</h4>
+                <div class="text-clamp" id="staff-detail-disciplines-container"><div id="staff-detail-disciplines" class="text-slate-400 text-sm"></div></div>
+                <button class="read-more-btn text-sky-400 hover:underline mt-2 text-sm font-bold" onclick="toggleReadMore(this, 'staff-detail-disciplines-container')">Читати далі</button>
+            </div>
+             <div class="mt-6">
+                <h4 class="font-bold text-white mb-2">Посилання</h4>
+                <div id="staff-detail-links" class="text-sky-400 text-sm"></div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-700">
+                <h4 class="font-bold text-white mb-2">Біографія</h4>
+                <div class="text-clamp" id="staff-detail-bio-container"><div id="staff-detail-bio" class="text-slate-400 text-sm"></div></div>
+                <button class="read-more-btn text-sky-400 hover:underline mt-2 text-sm font-bold" onclick="toggleReadMore(this, 'staff-detail-bio-container')">Читати далі</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="news-detail-modal" class="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[60] w-full max-w-5xl p-4 hidden transition-all duration-300 scale-95 opacity-0">
+    <div class="bg-slate-900 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden max-h-[90vh] flex flex-col neon-border-box">
+        <div class="p-4 border-b border-slate-700 flex justify-between items-start bg-slate-800/50">
+            <div class="pr-4">
+                <span id="news-modal-date" class="text-sky-400 text-sm font-mono block mb-1">DATA</span>
+                <h3 id="news-modal-title" class="text-xl md:text-2xl font-bold text-white leading-tight">Заголовок</h3>
+            </div>
+            <button onclick="closeAllModals()" class="text-slate-400 hover:text-white hover:bg-slate-700 rounded-lg p-1 transition">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <div class="overflow-y-auto overflow-x-hidden p-0 scrollbar-hide">
+            <div class="w-full h-64 md:h-96 relative group">
+                <img id="news-modal-img" src="" class="w-full h-full object-cover transition duration-700" alt="News Cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+            </div>
+            
+            <div class="p-6 md:p-10 space-y-4 text-slate-300 leading-relaxed text-base md:text-lg" id="news-modal-content">
+                <!-- Content -->
+            </div>
+            <div class="h-8"></div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-slate-900 border-t border-slate-800 py-10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <p class="text-slate-500">&copy; Тернопільський національний технічний університет імені Івана Пулюя</p>
+         <p class="text-slate-500">&copy; Кафедра приладів і контрольно-вимірювальних систем</p>
+    </div>
+</footer>
+
+
+<button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-sky-500 text-white p-3 rounded-full shadow-lg hidden hover:bg-sky-600 transition z-40" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+</button>
+<script src="staff_data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
