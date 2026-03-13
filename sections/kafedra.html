@@ -1,0 +1,216 @@
+
+<div class="mb-4 pt-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-white text-center">Кафедра приладів i контрольно-вимірювальних систем</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mb-4 border-b border-slate-700 pb-4">
+    <button class="sub-tab-btn active" onclick="switchSubTab('tab-history')">Історія</button>
+    <button class="sub-tab-btn" onclick="switchSubTab('tab-staff')">Персонал</button>
+    <button class="sub-tab-btn" onclick="switchSubTab('tab-programs')">Освітні програми</button>
+    <button class="sub-tab-btn" onclick="switchSubTab('tab-plan')">Навчальний план</button>
+    <button class="sub-tab-btn" onclick="switchSubTab('tab-graduates')">Випускники</button>
+</div>
+
+<!-- History Tab -->
+<div id="tab-history" class="sub-tab-content block">
+    <div class="bg-slate-800 rounded-2xl p-8 shadow-xl">
+        <div class="grid md:grid-cols-2 gap-8 items-start mb-8">
+            
+           <!-- ЛІВА КОЛОНКА (ФОТО + СТАТИСТИКА ПІД НИМ) -->
+<div class="relative">
+    <div class="sticky top-20 space-y-4">
+
+        <!-- Фото -->
+        <div class="relative overflow-hidden rounded-xl shadow-2xl group">
+            <img
+                src="image/ludipv.webp"
+                alt="Колектив кафедри приладів і контрольно-вимірювальних систем"
+                class="w-full object-cover transform group-hover:scale-105 transition duration-700"
+                onerror="this.src='https://placehold.co/600x400/1e293b/38bdf8?text=Кафедра+ПВ'"
+            >
+        </div>
+
+        <!-- Статистика -->
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm">
+            <div class="grid grid-cols-2 gap-4 text-center">
+
+                <div class="p-2">
+                    <span class="block text-3xl font-bold text-sky-400">30</span>
+                    <span class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">
+                        років досвіду
+                    </span>
+                </div>
+
+                <div class="p-2 border-l border-slate-700/50">
+                    <span class="block text-3xl font-bold text-sky-400">1000+</span>
+                    <span class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">
+                        випускників
+                    </span>
+                </div>
+
+                <div class="col-span-2 border-t border-slate-700/50 pt-3 mt-2">
+                    <span class="block text-3xl font-bold text-sky-400">10+</span>
+                    <span class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">
+                        партнерів кафедри
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- /ЛІВА КОЛОНКА --> 
+            <!-- ПРАВА КОЛОНКА (ТЕКСТ) -->
+            <div class="prose prose-invert space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Заснування та розвиток</h3>
+                    <div class="text-clamp text-slate-300 text-sm leading-relaxed" id="hist-1">
+                        <p class="mb-2">Кафедра ПВ утворилася у 1993 р. шляхом відокремлення від кафедри автоматизації технологічних процесів та виробництв з метою організації підготовки спеціалістів з профільної для тодішньому новоствореного Тернопільського державного приладобудівного інституту спеціальності – приладобудування.</p>
+                        <p class="mb-2">Базовою групою засновників кафедри була: доц. Рудник А. Г., доц. Рожук С. Г., доц. Куцевич А. В., та ст. викл. Лушпак В. Й. Згодом склад кафедри поповнився висококваліфікованими спеціалістами з інших вишів – проф. Кривень В. А., доц. Яворська М. І., (з НУ ЛП)) та з галузевих науково- дослідних інститутів – Паламар М. І., Умзар Ю. А., Зелінський І. М., Осов’як І.І., Дуда С. П.</p>
+                        <p>А також випускниками кафедри – Апостол Ю. О., Наконечний Ю. І., Новосад М. В., Ольшанський І. Є, Муха А. М., Шин О. Г., Нікулін Р. А., Дубиняк Т.С., а дещо пізніше випускниками аспірантури кафедри ПВ: Чайковський А.В., Пастернак Ю.В., Стрембіцький М.О., Кругльов В.В.</p>
+                    </div>
+                    <button class="text-sky-400 hover:text-sky-300 font-semibold text-sm mt-1 flex items-center gap-1" onclick="toggleReadMore(this, 'hist-1')">
+                        <span>Читати далі</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Зміна спеціальностей</h3>
+                    <div class="text-clamp text-slate-300 text-sm leading-relaxed" id="hist-2">
+                        <p class="mb-2">Підготовка фахівців на кафедрі велась за спеціальністю «Приладобудування». У 1993 році перейдено на багатоступеневу систему підготовки фахівців за схемою «бакалавр–спеціаліст–магістр» згідно Болонської системи. 1994 року відбувся перший випуск інженерів спеціальності 7.090901 «Приладобудування».</p>
+                        <p class="mb-2">Згодом з 2015 р. спеціальність «Прилади точної механіки» згідно нової кодифікації трансформувалась у спеціальність 152 «Метрологія та інформаційно-вимірювальна техніка». У 2017 р. було проведено ліцензування нового напряму підготовки бакалаврів за спеціальністю 153 «Мікро- та наносистемна техніка».</p>
+                        <p>З 2023 р. спеціальності кафедри перейшли до галузі знань 17 – «Електроніка, автоматизація та електронні комунікації».</p>
+                    </div>
+                    <button class="text-sky-400 hover:text-sky-300 font-semibold text-sm mt-1 flex items-center gap-1" onclick="toggleReadMore(this, 'hist-2')">
+                        <span>Читати далі</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Керівництво та сьогодення</h3>
+                    <div class="text-clamp text-slate-300 text-sm leading-relaxed" id="hist-3">
+                        <p class="mb-2">Після трагічної смерті зав. каф. доц. Рудника А.Г. з 2004 р. по 2006 р обов’язки завідувача кафедри виконував тодішній декан факультету доц. Куцевич А.В. З 2006 р. кафедру очолює д.т.н., професор Паламар Михайло Іванович.</p>
+                        <p>На сьогоднішній день на кафедрі плідно працюють 1 професор, 5 доцентів, 2 старших викладачі, 1 асистент та 3 аспіранти. Кафедра активно працює в напрямку розвитку прогресивних форм навчання.</p>
+                    </div>
+                    <button class="text-sky-400 hover:text-sky-300 font-semibold text-sm mt-1 flex items-center gap-1" onclick="toggleReadMore(this, 'hist-3')">
+                        <span>Читати далі</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Staff Tab -->
+<div id="tab-staff" class="sub-tab-content hidden">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+         <!-- Palamar -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="palamar">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/palamar.png" alt="Паламар М.І." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Паламар М.І.</h3>
+            <p class="text-sky-400 text-sm">д.т.н., професор</p>
+        </div>
+        <!-- Yavorska -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="yavorska">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/yavorska.png" alt="Яворська М.І." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Яворська М.І.</h3>
+            <p class="text-sky-400 text-sm">к.т.н., доцент</p>
+        </div>
+        <!-- Zelinskyi -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="zelinskyi">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/zelinskij.png" alt="Зелінський І.М." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Зелінський І.М.</h3>
+            <p class="text-sky-400 text-sm">к.ф.-м.н, доцент</p>
+        </div>
+        <!-- Nakonechnyi -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="nakonechnyi">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/305.png" alt="Наконечний Ю.І." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Наконечний Ю.І.</h3>
+            <p class="text-sky-400 text-sm">старший викладач</p>
+        </div>
+        <!-- Apostol -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="apostol">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/apostol.png" alt="Апостол Ю.О." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Апостол Ю.О.</h3>
+            <p class="text-sky-400 text-sm">старший викладач</p>
+        </div>
+        <!-- Dubyniak -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="dubyniak">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/dybuniak.png" alt="Дубиняк Т.С." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Дубиняк Т.С.</h3>
+            <p class="text-sky-400 text-sm">к.т.н., доцент</p>
+        </div>
+        <!-- Chaikovskyi -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="chaikovskyi">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/chajkovskij.png" alt="Чайковський А.В." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Чайковський А.В.</h3>
+            <p class="text-sky-400 text-sm">к.т.н., доцент</p>
+        </div>
+        <!-- Strembitskyi -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="strembitskyi">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/strembickij.jpg" alt="Стрембіцький М.О." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Стрембіцький М.О.</h3>
+            <p class="text-sky-400 text-sm">к.т.н., доцент</p>
+        </div>
+        <!-- Batiuk -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="batiuk">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/batuk.png" alt="Батюк В.В." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Батюк В.В.</h3>
+            <p class="text-sky-400 text-sm">асистент</p>
+        </div>
+        <!-- Rafaliuk -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="rafaliuk">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/rafaluk.png" alt="Рафалюк О.О." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Рафалюк О.О.</h3>
+            <p class="text-sky-400 text-sm">асистент</p>
+        </div>
+        <!-- Kucevych -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="kucevych">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/kucevich.jpg" alt="Куцевич С.П." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Куцевич С.П.</h3>
+            <p class="text-sky-400 text-sm">НДП</p>
+        </div>
+        <!-- Rudnyk -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="rudnyk">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/rydnyk.png" alt="Рудник А.А." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Рудник А.А.</h3>
+            <p class="text-sky-400 text-sm">НДП</p>
+        </div>
+        <!-- Ostafiichuk -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="ostafiichuk">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/ostafiychuk.jpg" alt="Остафійчук І.В." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Остафійчук І.В.</h3>
+            <p class="text-sky-400 text-sm">НДП</p>
+        </div>
+        <!-- Paprotska -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center border border-slate-700 hover:border-sky-500 transition cursor-pointer staff-card group" data-staff-id="paprotska">
+            <img class="w-32 h-32 mx-auto rounded-lg object-cover mb-4 group-hover:scale-105 transition duration-300" src="image/poprocka.jpg" alt="Папроцька О.В." onerror="this.src='https://placehold.co/150x150/1e293b/ffffff?text=Фото'">
+            <h3 class="text-lg font-bold text-white">Папроцька О.В.</h3>
+            <p class="text-sky-400 text-sm">інженер</p>
+        </div>
+    </div>
+</div>
+
+<!-- Programs, Plan, Graduates Tabs (content placeholder) -->
+<div id="tab-programs" class="sub-tab-content hidden">
+    <div class="space-y-4 bg-slate-800 p-8 rounded-xl">
+        <h3 class="text-2xl font-bold text-white">Бакалавр</h3>
+        <ul class="space-y-2">
+            <li><a href="kafedra_op/op_bac_153.pdf"  target="_blank" class="text-sky-400 hover:underline">Спеціальність: 153 "Мікро- та наносистемна техніка"</a></li>
+            <li><a href="kafedra_op/op176b.pdf" target="_blank"  class="text-sky-400 hover:underline">Спеціальність: 176 "Мікро- та наносистемна техніка"</a></li>
+            <li><a href="kafedra_op/op_bac_152.pdf"  target="_blank" class="text-sky-400 hover:underline">Спеціальність: 152 «Метрологія та інформаційно-вимірювальна техніка»"</a></li>
+             <li><a href="kafedra_op/op_bac_Mekhatronika-ta-intelektual-ni-informatsiyni-systemy (1).pdf"  target="_blank" class="text-sky-400 hover:underline">“Мехатроніка та інтелектуальні інформаційні системи“ (за спеціальністю 152 "Метрологія та інформаційно-вимірювальна техніка")</a></li>
+             <li><a href="kafedra_op/op175b.pdf"  target="_blank" class="text-sky-400 hover:underline">“Мехатроніка та інтелектуальні інформаційні системи“ (за спеціальністю 175 "Інформаційно-вимірювальні технології")</a></li>
+        </ul>
+        <h3 class="text-2xl font-bold text-white mt-8">Магістр</h3>
+        <ul class="space-y-2">
+            <li><a href="kafedra_op/opp_mag_153_2021.pdf"  target="_blank" class="text-sky-400 hover:underline">Спеціальність: 153 "Мікро- та наносистемна техніка"</a></li>
+            <li><a href="kafedra_op/op176m.pdf"  target="_blank" class="text-sky-400 hover:underline">Спеціальність: 176 “Мікро- та наносистемна техніка”</a></li>
+            <li><span class="text-slate-500">Спеціальність: 152 «Метрологія та інформаційно-вимірювальна техніка» — файл очікується</span></li>
+            <li><a href="kafedra_op/op175m.pdf"  target="_blank" class="text-sky-400 hover:underline">Спеціальність: 175 "Інформаційно-вимірювальні технології"</a></li>
+        </ul>
+    </div>
+</div>
+<div id="tab-plan" class="sub-tab-content hidden"><p class="text-slate-400 p-8">Тут буде розміщено інформацію про навчальні плани...</p></div>
+<div id="tab-graduates" class="sub-tab-content hidden"><p class="text-slate-400 p-8">Ми пишаємося нашими випускниками...</p></div>
