@@ -1,0 +1,39 @@
+{
+  "video": "Abit.mp4",
+  "specialties": [
+    {
+      "code": "G5",
+      "name": "Електроніка, електронні комунікації, приладобудування та радіотехніка",
+      "program": "Проектування мікроелектронних систем та пристроїв інтернету речей"
+    },
+    {
+      "code": "G6",
+      "name": "Інформаційно-вимірювальні технології",
+      "program": "Мехатроніка та інтелектуальні інформаційні системи"
+    }
+  ],
+  "important_links": [
+    {
+      "title": "Вартість навчання",
+      "desc": "Вартість навчання для вступників 2025 р",
+      "url": "https://vstup.tntu.edu.ua/vartist-navchannia.html",
+      "color": "sky"
+    },
+    {
+      "title": "Відповіді на запитання (FAQ)",
+      "desc": "Найпоширеніші питання абітурієнтів",
+      "url": "https://vstup.tntu.edu.ua/vidpovidi-na-nayposhyrenishi-zapytannia.html",
+      "color": "indigo"
+    },
+    {
+      "title": "Форма для реєстрації майбутніх абітурієнтів",
+      "desc": "Заповнити анкету в Google Forms",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfzk1b3fP4bce4bpElherUUPyWbLyukZLBwSfCFNXidecBcXA/viewform",
+      "color": "emerald"
+    }
+  ],
+  "extra_links": [
+    { "title": "Правила прийому ТНТУ", "url": "https://tntu.edu.ua/?p=uk/admission/rules" },
+    { "title": "Контакти приймальної комісії", "url": "https://tntu.edu.ua/?p=uk/admission" }
+  ]
+}

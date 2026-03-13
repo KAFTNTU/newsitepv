@@ -1,0 +1,16 @@
+{
+  "blanks": [
+    { "name": "Відгук на дипломну роботу магістра", "file": "blank/vidhuk_magistr.doc" },
+    { "name": "Відгук на дипломний проект спеціаліста", "file": "blank/vidhuk_spetsialist.doc" },
+    { "name": "Рецензія на дипломну роботу магістра", "file": "blank/retsenziya_magistr.doc" },
+    { "name": "Рецензія на дипломну роботу спеціаліста", "file": "blank/retsenziya_spetsialist.doc" },
+    { "name": "Завдання на дипломний проект", "file": "blank/zavdannya_dp.doc" },
+    { "name": "Завдання на дипломний проект (роботу) спеціаліста (магістра)", "file": "blank/zavdannya_dp_spetsialist.doc" },
+    { "name": "Завдання на курсовий проект спеціаліста (магістра)", "file": "blank/zavdannya_kp_spetsialist_magistr.doc" },
+    { "name": "Завдання на курсовий проект бакалавра", "file": "blank/zavdannya_kp_bakalavr.doc" },
+    { "name": "Завдання на курсову роботу бакалавра", "file": "blank/zavdannya_kr_bakalavr.doc" },
+    { "name": "Титульна сторінка КП", "file": "blank/tytul_kp_kr.doc" },
+    { "name": "Титульна сторінка дипломного проекту (роботи)", "file": "blank/tytul_dp.doc" },
+    { "name": "Напрямлення на рецензію", "file": "blank/napravlannya_na_retsenziyu.doc" }
+  ]
+}
